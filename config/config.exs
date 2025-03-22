@@ -9,9 +9,7 @@ config :ueberauth, Ueberauth,
 # Google OAuth credentials (pulled from environment variables)
 config :ueberauth, Ueberauth.Strategy.Google.OAuth,
   client_id: System.get_env("GOOGLE_CLIENT_ID"),
-  client_secret: System.get_env("GOOGLE_CLIENT_SECRET"),
-  redirect_uri: System.get_env("GOOGLE_REDIRECT_URI") || "http://localhost:4000/auth/google/callback"
-
+  client_secret: System.get_env("GOOGLE_CLIENT_SECRET")
 
 # Optional: Argon2 password hashing config (safe defaults)
 config :argon2_elixir,
