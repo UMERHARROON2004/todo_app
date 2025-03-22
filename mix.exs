@@ -20,11 +20,12 @@ defmodule TodoApp.MixProject do
 
   defp deps do
     [
-      {:plug_cowboy, "~> 2.5"}, # HTTP server for Plug
-      {:ueberauth, "~> 0.10"}, # Authentication framework
-      {:ueberauth_google, "~> 0.10"}, # Google OAuth provider
-      {:jason, "~> 1.4"}, # JSON parsing
+      {:plug_cowboy, "~> 2.5"},
+      {:plug, "~> 1.13"},
+      {:ueberauth, "~> 0.10"},
+      {:ueberauth_google, "~> 0.10"},
+      {:jason, "~> 1.4"},
+      {:argon2_elixir, "~> 3.0"} # Password hashing (for email/password auth)
     ]
   end
 end
-
