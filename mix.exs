@@ -23,9 +23,11 @@ defmodule TodoApp.MixProject do
       {:plug_cowboy, "~> 2.5"},
       {:plug, "~> 1.13"},
       {:ueberauth, "~> 0.10"},
-      {:ueberauth_google, "~> 0.10"},
+      {:ueberauth_google, "~> 0.12"},
       {:jason, "~> 1.4"},
-      {:argon2_elixir, "~> 3.0"} # Password hashing (for email/password auth)
+      {:ecto_sql, "~> 3.12"},   # Add this
+      {:myxql, "~> 0.7"},
+      {:argon2_elixir, "~> 3.0"}, # Password hashing
     ]
   end
 end

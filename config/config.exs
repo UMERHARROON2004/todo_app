@@ -1,5 +1,11 @@
 import Config
 
+config :todo_app, TodoApp.Repo,
+  database: "todo_app_repo",
+  username: "user",
+  password: "pass",
+  hostname: "localhost"
+
 # Ueberauth main config with Google strategy
 config :ueberauth, Ueberauth,
   providers: [
